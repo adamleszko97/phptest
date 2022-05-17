@@ -34,7 +34,10 @@ $result = mysqli_query($conn, sql);
 $names = mysqli_fetch_all($result, MYSQLI_ASSOC);
 echo "<br>";
 print_r($names); 
+    
+mysqli_free_result($result);
 
+mysqli_close($conn);
 
 
 ?>
