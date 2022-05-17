@@ -23,7 +23,7 @@ mysqli_close($conn);
 <?php
 while ($row = mysqli_fetch_array($result))
 {
-        echo $row['first_name'] . " " . $row['last_name'];
+        echo $row['name'] . " " . $row['department'];
         echo "<br>";
 }
  ?>
