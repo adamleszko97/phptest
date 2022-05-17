@@ -32,7 +32,10 @@ include('config/db_connect.php');
 	else{echo "No Results";}
 	?>
 
- 
+ <form>
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
    
 </body>
 </html>
