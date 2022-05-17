@@ -21,7 +21,7 @@ include('config/db_connect.php');
 	</tr>
 	<tr>
 		<th><form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
+  <input type="text" placeholder="Search.." name="search" size="4">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form></th>
 		<th><form class="example" action="action_page.php">
