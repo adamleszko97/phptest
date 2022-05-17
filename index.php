@@ -14,7 +14,7 @@ include('config/db_connect.php');
 <h1>Database search</h1>
 <table>
 	<tr>
-		<th class="centre">ID</th>
+		<th>ID</th>
 		<th>Name</th>
 		<th>Phone number</th>
 		<th>Department</th>
@@ -44,7 +44,7 @@ include('config/db_connect.php');
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
-			echo "<tr><td="text-align:center">" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["department"] . "</td></tr>";
+			echo "<tr><td style="text-align:center">" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["department"] . "</td></tr>";
 
 		}
 	echo "</table>";
