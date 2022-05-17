@@ -44,7 +44,7 @@ mysqli_close($conn);
 		<?php foreach ($names as $names){?>
 			<div class="col s6 md3">
 				<div class="card-content center">
-					<h4><?php echo htmlspecialchars($names['name','surname']);?></h4>
+					<h4><?php echo htmlspecialchars($names['name']);?></h4>
 				</div>
 			</div>
 		<?php } ?>
