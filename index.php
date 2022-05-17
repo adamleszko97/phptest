@@ -37,7 +37,7 @@ mysqli_close($conn);
 				echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone number"] . "</td><td>" . $row["department"] . "</td></tr>";
 
 			}
-echo "</table>"
+echo "</table>";
 	}
 else{
 	echo "No Results";
