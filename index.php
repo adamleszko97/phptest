@@ -29,16 +29,12 @@ if (mysqli_connect_errno())
     
     //Run the Select query
 printf("Reading data from table: \n");
-echo "<br>";
 $sql = SELECT name, surname FROM credentials';
 $result = mysqli_query($conn, sql);   
 $names = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-if ($result->num_rows > 0) {
+echo "<br>";
 print_r($names); 
-} else {
-  echo "0 results";
-}
+
 
 
 ?>
