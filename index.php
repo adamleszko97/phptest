@@ -30,7 +30,7 @@ if (mysqli_connect_errno())
     //Run the Select query
 printf("Reading data from table: \n");
 echo "<br>";
-$res = mysqli_query($conn, 'SELECT * FROM credentials');
+$res = mysqli_query($conn, 'SELECT name, surname FROM credentials');
 $result = $conn->query($res);   
 while ($row = mysqli_fetch_assoc())
     {
