@@ -37,7 +37,7 @@ mysqli_close($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database search</title>
 </head>
-<body>
+<body style="background-color:lightgray;">
 <h1>Database search</h1>
 <div class="container">
 	<div class="row">
