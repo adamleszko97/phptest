@@ -45,7 +45,7 @@ mysqli_close($conn);
 			<div class="col s6 md3">
 				<div class="card-content center">
 					<h4><?php echo htmlspecialchars($names['name']);
-					echo "&nbsp"	 
+					echo "&nbsp";	 
 					echo htmlspecialchars($names['surname']);?></h4>
 				</div>
 			</div>
