@@ -37,7 +37,7 @@ include('config/db_connect.php');
 
 
 
-<form class="example" action="action_page.php">
+<form class="example" action="#" method="POST">
   <input type="text" placeholder="Search.." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
