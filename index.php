@@ -35,7 +35,7 @@ $result = mysqli_query($conn, sql);
 $names = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 if ($result->num_rows > 0) {
-print_r($names) 
+print_r($names); 
 } else {
   echo "0 results";
 }
