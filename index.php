@@ -21,7 +21,7 @@ include('config/db_connect.php');
 	</tr>
 	<?php
 
-	$sql = "SELECT * FROM information_schema.employees1 WHERE CONSTRAINT_NAME = 'ID'";
+	$sql = "SELECT * FROM information_schema.employees1";
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
