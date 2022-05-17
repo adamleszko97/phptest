@@ -33,7 +33,7 @@ $sql = 'SELECT name, surname FROM credentials';
 $result = mysqli_query($conn, sql);   
 $names = mysqli_fetch_all($result, MYSQLI_ASSOC);
 echo "<br>";
-printf($names); 
+print_r($names); 
 
 
 
