@@ -1,18 +1,5 @@
 <?php
-
 include('config/db_connect.php');
-
-$sql = 'SELECT id, name, department, phone number FROM employees';
-$result = mysqli_query($conn, $sql);   
-
-echo "<br>";
-
-
-mysqli_free_result($result);
-
-mysqli_close($conn);
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,16 +19,17 @@ mysqli_close($conn);
 		<th>Department</th>
 	</tr>
 	<?php
-		if ($result-> num_rows >0){
-			while ($row = $result-> fetch_assoc()){
-				echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone number"] . "</td><td>" . $row["department"] . "</td></tr>";
 
-			}
-echo "</table>";
+	$sql = "SELECT id, name, department, phone number FROM employees";
+	$result = mysqli_query($conn, $sql);   
+	if ($result-> num_rows >0){
+		while ($row = $result-> fetch_assoc()){
+			echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone number"] . "</td><td>" . $row["department"] . "</td></tr>";
+
+		}
+	echo "</table>";
 	}
-else{
-	echo "No Results";
-}
+	else{echo "No Results";}
 	?>
 
  
