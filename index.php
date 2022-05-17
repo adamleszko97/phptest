@@ -21,7 +21,7 @@ include('config/db_connect.php');
 	</tr>
 	<?php
 
-	$sql = "SELECT id, name, department, phone_number FROM employees1";
+	$sql = "SELECT * FROM employees1";
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
