@@ -1,6 +1,6 @@
  <?php
 
-include('config/db_connect.php')
+include('config/db_connect.php');
 
 $sql = 'SELECT name, surname FROM credentials';
 $result = mysqli_query($conn, $sql);   
