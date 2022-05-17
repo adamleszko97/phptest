@@ -29,6 +29,7 @@ if (mysqli_connect_errno())
 printf("Reading data from table: \n");
 echo "<br>";    
 echo "<br>"; 
+echo "twoja stara";
 $res = mysqli_query($conn, 'SELECT * FROM test');
 while ($row = mysqli_fetch_assoc($res))
  {
