@@ -3,7 +3,7 @@
 include('config/db_connect.php');
 
 
-$result = mysqli_query($conn, "SELECT name, department FROM employees'");   
+$result = mysqli_query($conn, "SELECT ID, department FROM employees'");   
 echo "<br>";
    
 mysqli_free_result($result);
@@ -23,7 +23,7 @@ mysqli_close($conn);
 <?php
 while ($row = mysqli_fetch_array($result))
 {
-        echo $row['name'] . " " . $row['department'];
+        echo $row['ID'] . " " . $row['department'];
         echo "<br>";
 }
  ?>
