@@ -21,11 +21,11 @@ include('config/db_connect.php');
 	</tr>
 	<?php
 
-	$sql = "SELECT * FROM information_schema.employees1";
+	$sql = "SELECT * FROM employees1";
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
-			echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["department"] . "</td></tr>";
+			echo "<tr><td>" . $row["key"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["department"] . "</td></tr>";
 
 		}
 	echo "</table>";
