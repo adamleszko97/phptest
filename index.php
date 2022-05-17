@@ -20,13 +20,9 @@ mysqli_close($conn);
 </head>
 <body style="background-color:lightgray;">
 <h1>Database search</h1>
-<?php
-while ($row = mysqli_fetch_array($result))
-{
-        echo $row['ID'] . " " . $row['department'];
-        echo "<br>";
-}
- ?>
+<?php echo htmlspecialchars($result['ID']);
+					echo "&nbsp";	 
+					echo htmlspecialchars($names['department']);?>
    
 </body>
 </html>
