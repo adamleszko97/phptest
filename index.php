@@ -2,7 +2,7 @@
 
 include('config/db_connect.php');
 
-$sql = 'SELECT name, surname FROM credentials';
+$sql = 'SELECT name, department FROM employees';
 $result = mysqli_query($conn, $sql);   
 $names = mysqli_fetch_all($result, MYSQLI_ASSOC);
 echo "<br>";
@@ -29,7 +29,7 @@ mysqli_close($conn);
 				<div class="card-content center">
 					<h4><?php echo htmlspecialchars($names['name']);
 					echo "&nbsp";	 
-					echo htmlspecialchars($names['phone number']);?></h4>
+					echo htmlspecialchars($names['department']);?></h4>
 				</div>
 			</div>
 		<?php } ?>
