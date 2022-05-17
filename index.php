@@ -21,7 +21,7 @@ include('config/db_connect.php');
 	</tr>
 	<?php
 
-	$sql = "SELECT * FROM employees1";
+	$sql = "SELECT * FROM information_schema.employees1 WHERE CONSTRAINT_NAME = 'ID'";
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
@@ -37,10 +37,7 @@ include('config/db_connect.php');
 
 
 
-<form class="example" action="#" method="POST">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
+
    
 </body>
 </html>
