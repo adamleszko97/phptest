@@ -28,6 +28,7 @@ if (mysqli_connect_errno())
     //Run the Select query
 printf("Reading data from table: \n");
 echo "<br>";    
+echo "<br>"; 
 $res = mysqli_query($conn, 'SELECT * FROM test');
 while ($row = mysqli_fetch_assoc($res))
  {
