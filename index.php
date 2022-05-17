@@ -22,7 +22,7 @@ mysqli_close($conn);
 <h1>Database search</h1>
 <?php echo htmlspecialchars($result['ID']);
 					echo "&nbsp";	 
-					echo htmlspecialchars($names['department']);?>
+					echo htmlspecialchars($result['department']);?>
    
 </body>
 </html>
