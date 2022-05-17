@@ -1,3 +1,4 @@
+<?php
 $host = 'mysqlserverale.mysql.database.azure.com';
 $username = 'ale@mysqlserverale';
 $password = 'Tornado97.';
@@ -16,7 +17,7 @@ if (mysqli_connect_errno())
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
