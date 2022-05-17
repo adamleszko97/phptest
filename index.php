@@ -8,7 +8,7 @@ include('config/db_connect.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database search</title>
 </head>
-<body style="background-color:lightgray;">
+<body>
 <h1>Database search</h1>
 
 <table>
@@ -20,7 +20,7 @@ include('config/db_connect.php');
 	</tr>
 	<?php
 
-	$sql = "SELECT id, name, department, phone number FROM employees";
+	$sql = "SELECT id, name, department, 'phone number' FROM employees";
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
