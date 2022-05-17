@@ -44,7 +44,7 @@ include('config/db_connect.php');
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
-			echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["department"] . "</td></tr>";
+			echo "<tr><td style="text-align: center; vertical-align: middle;>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["department"] . "</td></tr>";
 
 		}
 	echo "</table>";
