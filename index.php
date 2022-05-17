@@ -29,15 +29,11 @@ if (mysqli_connect_errno())
     //Run the Select query
 printf("Reading data from table: \n");
 echo "<br>"
-$res = mysqli_query($conn, 'SELECT name, surname FROM credentials');
-$result = $conn->query($res);    
-if ($result->num_rows > 0){
-    while ($row = $result -> mysqli_fetch_assoc()){
-        echo "Name: " . $row["name"]. " " . $row["surname"]. "<br>";
-}
-} else {
-  echo "0 results";
-}        
+$res = mysqli_query($conn, 'SELECT * FROM Products');
+while ($row = mysqli_fetch_assoc($res))
+ {
+    var_dump($row);
+ }
 
 ?>
 </body>
