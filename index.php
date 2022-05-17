@@ -10,9 +10,9 @@ include('config/db_connect.php');
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<h1 class="center">Database search</h1>
-
-<table class="center">
+<h1>Database search</h1>
+<div class="center">
+<table>
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
@@ -52,7 +52,7 @@ include('config/db_connect.php');
 	else{echo "No Results";}
 	?>
 
-
+	</div>
 
 
 
