@@ -14,7 +14,7 @@ include('config/db_connect.php');
 <h1>Database search</h1>
 <table>
 	<tr>
-		<th>ID</th>
+		<th class="centre">ID</th>
 		<th>Name</th>
 		<th>Phone number</th>
 		<th>Department</th>
