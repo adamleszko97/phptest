@@ -1,18 +1,16 @@
- <?php
+<?php
 
 include('config/db_connect.php');
 
-$sql = 'SELECT name, department FROM employees';
-$result = mysqli_query($conn, $sql);   
-$names = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+$result = mysqli_query($conn, "SELECT name, department FROM employees'");   
 echo "<br>";
    
 mysqli_free_result($result);
 
 mysqli_close($conn);
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,20 +20,13 @@ mysqli_close($conn);
 </head>
 <body style="background-color:lightgray;">
 <h1>Database search</h1>
-<div class="container">
-	<div class="row">
-		<?php foreach ($names as $names){?>
-			<div class="col s6 md3">
-				<div class="card-content center">
-					<h4><?php echo htmlspecialchars($names['name']);
-					echo "&nbsp";	 
-					echo htmlspecialchars($names['department']);?></h4>
-				</div>
-			</div>
-		<?php } ?>
-	</div>
-</div>	
- 
+<?php
+while ($row = mysqli_fetch_array($result))
+{
+        echo $row['first_name'] . " " . $row['last_name'];
+        echo "<br>";
+}
+ ?>
    
 </body>
 </html>
