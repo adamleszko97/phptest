@@ -11,7 +11,7 @@ include('config/db_connect.php');
 </head>
 <body>
 <h1>Database search</h1>
-<div class="center">
+<center>
 <table>
 	<tr>
 		<th>ID</th>
@@ -51,8 +51,7 @@ include('config/db_connect.php');
 	}
 	else{echo "No Results";}
 	?>
-
-	</div>
+</center>
 
 
 
