@@ -28,7 +28,7 @@ if (mysqli_connect_errno())
     
     //Run the Select query
 printf("Reading data from table: \n");
-$res = mysqli_query($conn, 'SELECT * FROM test');
+$res = mysqli_query($conn, 'SELECT * FROM credentials');
 while ($row = mysqli_fetch_assoc($res))
  {
     var_dump($row);
