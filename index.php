@@ -12,7 +12,7 @@
 $host = 'mysqlserverale.mysql.database.azure.com';
 $username = 'ale@mysqlserverale';
 $password = 'Tornado97.';
-$db_name = 'mysqlserverale';
+$db_name = 'test';
 
 //Initializes MySQLi
 $conn = mysqli_init();
