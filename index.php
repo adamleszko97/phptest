@@ -38,14 +38,13 @@ mysqli_close($conn);
     <title>Database search</title>
 </head>
 <body>
-<h4>Database search</h4>
+<h1>Database search</h1>
 <div class="container">
 	<div class="row">
 		<?php foreach ($names as $names){?>
 			<div class="col s6 md3">
 				<div class="card-content center">
-					<h6><?php echo htmlspecialchars($names['name']);?></h6>
-					<h6><?php echo htmlspecialchars($names['surname']);?></h6>
+					<h4><?php echo htmlspecialchars($names['name'],['surname']);?></h4>
 				</div>
 			</div>
 		<?php } ?>
