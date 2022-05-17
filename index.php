@@ -18,7 +18,7 @@ if (mysqli_connect_errno())
   
     
     //Run the Select query
-printf("Reading data from table: \n");
+
 $sql = 'SELECT name, surname FROM credentials';
 $result = mysqli_query($conn, $sql);   
 $names = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -35,11 +35,23 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP - Hello, World!</title>
+    <title>Database search</title>
 </head>
 <body>
-        <h1><?php echo 'Hello, World!'; ?></h1>
-    <?php print_r($names);?>
+<h4>Database search</h4>
+<div class="container">
+	<div class="row">
+		<?php foreach ($names as $names){?>
+			<div class="col s6 md3">
+				<div class="card-content center">
+					<h6><?php echo htmlspecialchars($names['name']);?></h6>
+					<h6><?php echo htmlspecialchars($names['surname']);?></h6>
+				</div>
+			</div>
+		<?php } ?>
+	</div>
+</div>	
+ 
    
 </body>
 </html>
