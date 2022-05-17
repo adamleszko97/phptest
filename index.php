@@ -1,14 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP - Hello, World!</title>
-</head>
-<body>
-        <h1><?php echo 'Hello, World!'; ?></h1>
-    <?php
+ <?php
 $host = 'mysqlserverale.mysql.database.azure.com';
 $username = 'ale@mysqlserverale';
 $password = 'Tornado97.';
@@ -33,13 +23,23 @@ $sql = 'SELECT name, surname FROM credentials';
 $result = mysqli_query($conn, $sql);   
 $names = mysqli_fetch_all($result, MYSQLI_ASSOC);
 echo "<br>";
-print_r($names); 
-    
+   
 mysqli_free_result($result);
 
 mysqli_close($conn);
 
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - Hello, World!</title>
+</head>
+<body>
+        <h1><?php echo 'Hello, World!'; ?></h1>
+    <?php print_r($names);?>
+   
 </body>
 </html>
