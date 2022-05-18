@@ -25,7 +25,7 @@ include('config/db_connect.php');
 
 </tr>	
 <tr>
-<th colspan="5"><input style="width:100%" type="submit" value="Search"></th>
+<th style="border: none; padding: 8px 0;" colspan="5"><input style="width:100%" type="submit" value="Search" ></th>
 </tr>
 </form>	  
 
