@@ -13,6 +13,10 @@ include('config/db_connect.php');
 <center>
 <h1>Database search</h1>
 <table>
+	
+	<form class="example" action="action_page.php">
+  	<input type="text" placeholder="Search.." name="search">
+  	<button type="submit">
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
@@ -20,19 +24,10 @@ include('config/db_connect.php');
 		<th>Department</th>
 	</tr>
 	<tr>
-		<th><form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search" size="4">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form></th>
-		<th><form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form></th>
-		<th><form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form></th>
-		<th><select name="cars" id="cars">
+		<th></th>
+		<th><</th>
+		<th></th>
+		<th><select name="department" id="department">
   <option value="SFO">SFO</option>
   <option value="CHANGE">CHANGE</option>
   <option value="Internal IT">Internal IT</option>
