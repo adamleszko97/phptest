@@ -8,7 +8,7 @@ include('config/db_connect.php');
  	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Database search</title>
-	<link rel="stylesheet" href="http://localhost/test/style.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 <center>
