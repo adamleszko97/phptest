@@ -29,9 +29,11 @@ include('config/db_connect.php');
 
 	$search = $_POST['search'];
 	echo "ELO {$search} ELO";
+		 $sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '%{$search}%'" ;
+		 echo "{$sql}";
 	if(isset($_POST['search'])){
 
-		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '{$search}'" ;
+		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '%{$search}%'" ;
 		$result = mysqli_query($conn, $sql);   
 		if ($result-> num_rows >0){
 			while ($row = $result-> fetch_assoc()){
