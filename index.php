@@ -15,7 +15,7 @@ include('config/db_connect.php');
 <table>
 	<tr>
 	<th>	
-		<form class="example" action="action_page.php">
+		<form method="post">
   		<input type="text" placeholder="Search.." name="search">
   		<button type="submit">
 	</th>	
@@ -26,8 +26,7 @@ include('config/db_connect.php');
   		<option value="Internal IT">Internal IT</option>
 	</th>		
 	</tr>	
-		
-</select>
+	</br>	
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
