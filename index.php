@@ -7,7 +7,6 @@ include('config/db_connect.php');
  	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Database search</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <center>
@@ -18,9 +17,9 @@ include('config/db_connect.php');
 <tr>	
 
 <td><input size="4" type="text" placeholder="ID.." name="id_search"></td>
-<td><input type="text" placeholder="Name.." name="search"></td>
-<td><input type="text" placeholder="Phone number.." name="search"></td>
-<td><input type="text" placeholder="Department.." name="search"></td>
+<td><input type="text" placeholder="Name.." name="name_search"></td>
+<td><input type="text" placeholder="Phone number.." name="pn_search"></td>
+<td><input type="text" placeholder="Department.." name="dept_search"></td>
 
 </tr>	
 <tr>
@@ -38,11 +37,15 @@ include('config/db_connect.php');
 		
 	<?php
 
-	$search = $_POST['id_search'];
-	if($search !== ""){
-	if(isset($search)){
+	$id_search = $_POST['id_search'];
+	$name_search = $_POST['name_search'];
+	$pn_search = $_POST['pn_search'];
+	$dept_search = $_POST['dept_search'];
 
-		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '%{$search}%'" ;
+	if($id_search !== "" || $name_search !== "" || $pn_search !== "" || $dept_search !== ""){
+	if(isset($id_search) || isset($name_search) || isset($pn_search) || isset($dept_search)){
+
+		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE id like '%{$id_search}%' and name like '%{$name_search}%' and phone_number like '%{$pn_search}%' and deapartment like '%{$dept_search}%' ;
 		$result = mysqli_query($conn, $sql);   
 		if ($result-> num_rows >0){
 			while ($row = $result-> fetch_assoc()){
