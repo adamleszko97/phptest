@@ -29,12 +29,7 @@ include('config/db_connect.php');
 		<th>Phone number</th>
 		<th>Department</th>
 	</tr>
-	<tr>
-		<th></th>
-		<th><</th>
-		<th></th>
-		<th></th>
-	</tr>
+		
 	<?php
 
 	$sql = "SELECT id, name, department, phone_number FROM employees1";
