@@ -17,10 +17,10 @@ include('config/db_connect.php');
 <form action="index.php" method="post">
 <tr>	
 
-<th><input size="4" type="text" placeholder="ID.." name="search"></th>
-<th><input type="text" placeholder="Name.." name="search"></th>
-<th><input type="text" placeholder="Phone number.." name="search"></th>
-<th><input type="text" placeholder="Department.." name="search"></th>
+<td><input size="4" type="text" placeholder="ID.." name="id_search"></td>
+<td><input type="text" placeholder="Name.." name="search"></td>
+<td><input type="text" placeholder="Phone number.." name="search"></td>
+<td><input type="text" placeholder="Department.." name="search"></td>
 
 </tr>	
 <tr>
@@ -38,7 +38,7 @@ include('config/db_connect.php');
 		
 	<?php
 
-	$search = $_POST['search'];
+	$search = $_POST['id_search'];
 	if($search !== ""){
 	if(isset($search)){
 
