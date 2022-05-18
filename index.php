@@ -17,6 +17,12 @@ include('config/db_connect.php');
 	<form class="example" action="action_page.php">
   	<input type="text" placeholder="Search.." name="search">
   	<button type="submit">
+		
+	<select name="department" id="department">
+  	<option value="SFO">SFO</option>
+  	<option value="CHANGE">CHANGE</option>
+  	<option value="Internal IT">Internal IT</option>
+</select>
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
@@ -27,11 +33,7 @@ include('config/db_connect.php');
 		<th></th>
 		<th><</th>
 		<th></th>
-		<th><select name="department" id="department">
-  <option value="SFO">SFO</option>
-  <option value="CHANGE">CHANGE</option>
-  <option value="Internal IT">Internal IT</option>
-</select></th>
+		<th></th>
 	</tr>
 	<?php
 
