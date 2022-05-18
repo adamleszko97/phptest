@@ -8,7 +8,7 @@ include('config/db_connect.php');
  	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Database search</title>
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="http://localhost/test/style.css" type="text/css">
 </head>
 <body>
 <center>
@@ -18,7 +18,7 @@ include('config/db_connect.php');
 <form action="index.php" method="post">
 <tr>	
 
-<td><input size="4" type="text" placeholder="ID.." name="id_search"></td>
+<td><input type="text" placeholder="ID.." name="id_search"></td>
 <td><input type="text" placeholder="Name.." name="name_search"></td>
 <td><input type="text" placeholder="Phone number.." name="pn_search"></td>
 <td><input type="text" placeholder="Department.." name="dept_search"></td>
@@ -56,7 +56,7 @@ include('config/db_connect.php');
 			}
 		echo "</table>";
 		}
-		else{echo "No Results";}
+		else{echo "</table><h1>No Results</h1>";}
 
 
 
