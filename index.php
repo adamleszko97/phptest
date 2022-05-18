@@ -18,7 +18,7 @@ include('config/db_connect.php');
 <form action="index.php" method="post">
 <tr>	
 
-<td><input type="text" placeholder="ID.." name="id_search"></td>
+<td><input size="3" type="text" placeholder="ID.." name="id_search"></td>
 <td><input type="text" placeholder="Name.." name="name_search"></td>
 <td><input type="text" placeholder="Phone number.." name="pn_search"></td>
 <td><input type="text" placeholder="Department.." name="dept_search"></td>
