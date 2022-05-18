@@ -45,7 +45,7 @@ include('config/db_connect.php');
 	if($id_search !== "" || $name_search !== "" || $pn_search !== "" || $dept_search !== ""){
 	if(isset($id_search) || isset($name_search) || isset($pn_search) || isset($dept_search)){
 
-		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE id like '%{$id_search}%' and name like '%{$name_search}%' and phone_number like '%{$pn_search}%' and deapartment like '%{$dept_search}%' ;
+		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE id like '%{$id_search}%' and name like '%{$name_search}%' and phone_number like '%{$pn_search}%' and deapartment like '%{$dept_search}%'" ;
 		$result = mysqli_query($conn, $sql);   
 		if ($result-> num_rows >0){
 			while ($row = $result-> fetch_assoc()){
