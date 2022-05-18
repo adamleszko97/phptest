@@ -12,12 +12,23 @@ include('config/db_connect.php');
 <body>
 <center>
 <h1>Database search</h1>
+
 <table>
+<form action="index.php" method="post">
+<tr>	
+
+<th><input size="4" type="text" placeholder="ID.." name="search"></th>
+<th><input type="text" placeholder="Name.." name="search"></th>
+<th><input type="text" placeholder="Phone number.." name="search"></th>
+<th><input type="text" placeholder="Department.." name="search"></th>
+
+</tr>	
+<tr>
+<th colspan="5"><input style="width:100%" type="submit" value="Search"></th>
+</tr>
+</form>	  
+
 		
-		<form action="index.php" method="post">
-  		<input type="text" placeholder="Search.." name="search">
-  		<input type="submit" value="Search">
-		</form>	  
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
