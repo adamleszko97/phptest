@@ -16,8 +16,9 @@ include('config/db_connect.php');
 	<tr>
 	<th>	
 		<form method="post">
-  		<input type="text" placeholder="Search.." name="search">
-  		<button type="submit" name="search">
+		<lable>Search</lable>
+  		<input type="text" placeholder="Search.." name="string">
+  		<button type="submit" name="submit">
 	</th>	
 	<th>
 	</th>
