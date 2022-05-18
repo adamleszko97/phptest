@@ -16,7 +16,7 @@ include('config/db_connect.php');
 		
 		<form method="post">
   		<input type="text" placeholder="Search.." name="search">
-  		<imput type="submit" value="Search">
+  		<input type="submit" value="Search">
 		</form>	  
 	<tr>
 		<th>ID</th>
