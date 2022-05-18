@@ -27,7 +27,7 @@ include('config/db_connect.php');
 		
 	<?php
 
-	$search = $_POST['search']
+	$search = $_POST['search'];
 	echo $_GET['search'];
 
 	$sql = "SELECT id, name, department, phone_number FROM employees1" WHERE name like '%search%' ;
