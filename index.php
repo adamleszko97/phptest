@@ -19,6 +19,12 @@ include('config/db_connect.php');
   		<input type="text" placeholder="Search.." name="search">
   		<button type="submit">
 	</th>	
+	<th>
+	</th>
+	<th>
+	</th>
+	<th>
+	</th>
 	<th>		
 		<select name="department" id="department">
   		<option value="SFO">SFO</option>
