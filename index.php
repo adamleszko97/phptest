@@ -1,6 +1,5 @@
 <?php
 include('config/db_connect.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +14,7 @@ include('config/db_connect.php');
 <h1>Database search</h1>
 <table>
 		
-		<form action="result.php" method="post">
+		<form action="index.php" method="post">
   		<input type="text" placeholder="Search.." name="search">
   		<input type="submit" value="Search">
 		</form>	  
@@ -25,6 +24,29 @@ include('config/db_connect.php');
 		<th>Phone number</th>
 		<th>Department</th>
 	</tr>
+		
+	<?php
+
+	$search = $_POST['search'];
+	echo "ELO {$search} ELO";
+	if(isset($_POST['search'])){
+
+		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '{$search}'" ;
+		$result = mysqli_query($conn, $sql);   
+		if ($result-> num_rows >0){
+			while ($row = $result-> fetch_assoc()){
+				echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["phone_number"] . "</td><td>" . $row["department"] . "</td></tr>";
+	
+			}
+		echo "</table>";
+		}
+		else{echo "No Results";}
+
+
+
+	}
+
+	?>
 </center>
 
 
