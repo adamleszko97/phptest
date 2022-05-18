@@ -23,8 +23,6 @@ include('config/db_connect.php');
 	</th>
 	<th>
 	</th>
-	<th>
-	</th>
 	<th>		
 		<select name="department" id="department">
   		<option value="SFO">SFO</option>
