@@ -28,7 +28,7 @@ include('config/db_connect.php');
 	<?php
 
 	$search = $_POST['search'];
-	
+	if($search !== ""){
 	if(isset($search)){
 
 		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '%{$search}%'" ;
@@ -45,6 +45,7 @@ include('config/db_connect.php');
 
 
 	}
+}
 
 	?>
 </center>
