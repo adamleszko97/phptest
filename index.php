@@ -1,5 +1,6 @@
 <?php
 include('config/db_connect.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +8,7 @@ include('config/db_connect.php');
  	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Database search</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 <center>
@@ -28,7 +30,7 @@ include('config/db_connect.php');
 </form>	  
 
 		
-	<tr>
+	<tr class="border">
 		<th>ID</th>
 		<th>Name</th>
 		<th>Phone number</th>
