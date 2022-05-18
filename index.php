@@ -28,10 +28,8 @@ include('config/db_connect.php');
 	<?php
 
 	$search = $_POST['search'];
-	echo "ELO {$search} ELO";
-		 $sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '%{$search}%'" ;
-		 echo "{$sql}";
-	if(isset($_POST['search'])){
+	
+	if(isset($search)){
 
 		$sql = "SELECT id, name, department, phone_number FROM employees1 WHERE name like '%{$search}%'" ;
 		$result = mysqli_query($conn, $sql);   
