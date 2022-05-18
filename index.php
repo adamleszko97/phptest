@@ -13,15 +13,20 @@ include('config/db_connect.php');
 <center>
 <h1>Database search</h1>
 <table>
-	
-	<form class="example" action="action_page.php">
-  	<input type="text" placeholder="Search.." name="search">
-  	<button type="submit">
+	<tr>
+	<th>	
+		<form class="example" action="action_page.php">
+  		<input type="text" placeholder="Search.." name="search">
+  		<button type="submit">
+	</th>	
+	<th>		
+		<select name="department" id="department">
+  		<option value="SFO">SFO</option>
+  		<option value="CHANGE">CHANGE</option>
+  		<option value="Internal IT">Internal IT</option>
+	</th>		
+	</tr>	
 		
-	<select name="department" id="department">
-  	<option value="SFO">SFO</option>
-  	<option value="CHANGE">CHANGE</option>
-  	<option value="Internal IT">Internal IT</option>
 </select>
 	<tr>
 		<th>ID</th>
