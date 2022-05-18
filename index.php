@@ -14,9 +14,10 @@ include('config/db_connect.php');
 <h1>Database search</h1>
 <table>
 		
-		<form>
-  		<input type="text" placeholder="Search.." name="search_value">
-  		<imput type="text" name="search" value="Search">
+		<form method="post">
+  		<input type="text" placeholder="Search.." name="search">
+  		<imput type="submit" value="Search">
+		</form>	  
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
@@ -26,7 +27,10 @@ include('config/db_connect.php');
 		
 	<?php
 
-	$sql = "SELECT id, name, department, phone_number FROM employees1";
+	$search = $_POST['search']
+	echo $_GET['search'];
+
+	$sql = "SELECT id, name, department, phone_number FROM employees1" WHERE name like '%search%' ;
 	$result = mysqli_query($conn, $sql);   
 	if ($result-> num_rows >0){
 		while ($row = $result-> fetch_assoc()){
